@@ -162,115 +162,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/25/%E5%9F%BA%E4%BA%8EJDK%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="yfliao">
-      <meta itemprop="description" content="coding coding ...">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yuanfan">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/25/%E5%9F%BA%E4%BA%8EJDK%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7/" class="post-title-link" itemprop="url">1.基于JDK命令行监控工具</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-25 22:42:00 / 修改时间：23:01:08" itemprop="dateCreated datePublished" datetime="2020-05-25T22:42:00+08:00">2020-05-25</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JDK-%E7%9B%91%E6%8E%A7/" itemprop="url" rel="index"><span itemprop="name">JDK 监控</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="1-基于JDK命令行监控工具"><a href="#1-基于JDK命令行监控工具" class="headerlink" title="1.基于JDK命令行监控工具"></a>1.基于JDK命令行监控工具</h1><h2 id="1-1-JVM的参数类型"><a href="#1-1-JVM的参数类型" class="headerlink" title="1.1 JVM的参数类型"></a>1.1 JVM的参数类型</h2><h3 id="1-1-1标准参数"><a href="#1-1-1标准参数" class="headerlink" title="1.1.1标准参数"></a>1.1.1标准参数</h3><h5 id="1-1-1-1-help"><a href="#1-1-1-1-help" class="headerlink" title="1.1.1.1 -help"></a>1.1.1.1 -help</h5><h5 id="1-1-1-2-server-client"><a href="#1-1-1-2-server-client" class="headerlink" title="1.1.1.2 -server -client"></a>1.1.1.2 -server -client</h5><h5 id="1-1-1-3-version-showversion"><a href="#1-1-1-3-version-showversion" class="headerlink" title="1.1.1.3 -version -showversion"></a>1.1.1.3 -version -showversion</h5><h5 id="1-1-1-4-cp-classpath"><a href="#1-1-1-4-cp-classpath" class="headerlink" title="1.1.1.4 -cp -classpath"></a>1.1.1.4 -cp -classpath</h5><h3 id="1-1-2-X参数"><a href="#1-1-2-X参数" class="headerlink" title="1.1.2 X参数"></a>1.1.2 X参数</h3><h5 id="1-1-2-1-Xint-解释执行，不会编译成本地代码"><a href="#1-1-2-1-Xint-解释执行，不会编译成本地代码" class="headerlink" title="1.1.2.1 -Xint:解释执行，不会编译成本地代码"></a>1.1.2.1 -Xint:解释执行，不会编译成本地代码</h5><p><img src="%5Cimages%5Cpasted-0.png%5C" alt="upload successful"></p>
-<h5 id="1-1-2-2-Xcomp-第一次使用就编译成本地代码"><a href="#1-1-2-2-Xcomp-第一次使用就编译成本地代码" class="headerlink" title="1.1.2.2 -Xcomp:第一次使用就编译成本地代码"></a>1.1.2.2 -Xcomp:第一次使用就编译成本地代码</h5><h5 id="1-1-2-3-Xmixed-混合模式，JVM自己来决定是否编译成本地代码"><a href="#1-1-2-3-Xmixed-混合模式，JVM自己来决定是否编译成本地代码" class="headerlink" title="1.1.2.3 -Xmixed:混合模式，JVM自己来决定是否编译成本地代码"></a>1.1.2.3 -Xmixed:混合模式，JVM自己来决定是否编译成本地代码</h5><h3 id="1-1-2-XX参数"><a href="#1-1-2-XX参数" class="headerlink" title="1.1.2 XX参数"></a>1.1.2 XX参数</h3><h5 id="1-1-3-1-Boolean类型-XX-表示启用或禁用name属性"><a href="#1-1-3-1-Boolean类型-XX-表示启用或禁用name属性" class="headerlink" title="1.1.3.1 Boolean类型 -XX:[+-] 表示启用或禁用name属性"></a>1.1.3.1 Boolean类型 -XX:[+-]<name> 表示启用或禁用name属性</h5><ol>
-<li>格式：-XX:[+-]<name> 表示启用或禁用name属性</li>
-<li>比如：-XX:+UseConcMarkSweepGC 启用CMS垃圾收集器<pre><code>-XX:+UseG1GC 启用G1垃圾收集器</code></pre><h5 id="1-1-3-2-非Boolean类型"><a href="#1-1-3-2-非Boolean类型" class="headerlink" title="1.1.3.2 非Boolean类型"></a>1.1.3.2 非Boolean类型</h5></li>
-<li>格式：-XX:<name>=<value> 表示用name属性的值是value</li>
-<li>比如：-XX:MaxGCPauseMillis=500 GC的最大停顿时间是500ms<pre><code>-XX:GCTimeRatio=19 </code></pre><h5 id="1-1-3-3-Xmx-Xms-XX参数"><a href="#1-1-3-3-Xmx-Xms-XX参数" class="headerlink" title="1.1.3.3 -Xmx -Xms(XX参数)"></a>1.1.3.3 -Xmx -Xms(XX参数)</h5><img src="%5Cimages%5Cpasted-1.png%5C" alt="upload successful"></li>
-<li>-Xms等价于-XX:InitialHeapSize 初始化堆大小</li>
-<li>-Xmx等价于-XX:MaxHeapSize 最大堆大小<h2 id="1-2-运行时JVM参数查看（重要）"><a href="#1-2-运行时JVM参数查看（重要）" class="headerlink" title="1.2 运行时JVM参数查看（重要）"></a>1.2 运行时JVM参数查看（重要）</h2><h3 id="1-2-1-XX-PrintFlagsInitial-查看初始值"><a href="#1-2-1-XX-PrintFlagsInitial-查看初始值" class="headerlink" title="1.2.1 -XX:+PrintFlagsInitial 查看初始值"></a>1.2.1 -XX:+PrintFlagsInitial 查看初始值</h3><h3 id="1-2-2-XX-PrintFlagsFinal-查看最终的值"><a href="#1-2-2-XX-PrintFlagsFinal-查看最终的值" class="headerlink" title="1.2.2 -XX:+PrintFlagsFinal 查看最终的值"></a>1.2.2 -XX:+PrintFlagsFinal 查看最终的值</h3><h3 id="1-2-3-XX-UnlockExperimentalVMOptions解锁实验参数"><a href="#1-2-3-XX-UnlockExperimentalVMOptions解锁实验参数" class="headerlink" title="1.2.3 -XX:+UnlockExperimentalVMOptions解锁实验参数"></a>1.2.3 -XX:+UnlockExperimentalVMOptions解锁实验参数</h3><h3 id="1-2-4-XX-UnlockDiagnosticVMOptions解锁诊断参数"><a href="#1-2-4-XX-UnlockDiagnosticVMOptions解锁诊断参数" class="headerlink" title="1.2.4 -XX:+UnlockDiagnosticVMOptions解锁诊断参数"></a>1.2.4 -XX:+UnlockDiagnosticVMOptions解锁诊断参数</h3><h3 id="1-2-5-XX-PrintCommandLineFlags打印命令行参数"><a href="#1-2-5-XX-PrintCommandLineFlags打印命令行参数" class="headerlink" title="1.2.5 -XX:+PrintCommandLineFlags打印命令行参数"></a>1.2.5 -XX:+PrintCommandLineFlags打印命令行参数</h3><h3 id="1-2-6-jps-查看java进程"><a href="#1-2-6-jps-查看java进程" class="headerlink" title="1.2.6 jps 查看java进程"></a>1.2.6 jps 查看java进程</h3></li>
-<li>jps - l 查看应用全类名</li>
-<li><a href="https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jps.html" target="_blank" rel="noopener">查看jsp指令官方文档</a><h3 id="1-2-7-jinfo-查看JVM正在运行的参数值"><a href="#1-2-7-jinfo-查看JVM正在运行的参数值" class="headerlink" title="1.2.7 jinfo 查看JVM正在运行的参数值"></a>1.2.7 jinfo 查看JVM正在运行的参数值</h3></li>
-<li>查看运行进程的参数值<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">jinfo -flag 参数名 进程号</span><br><span class="line">jinfo -flag MaxHeapSize 1508（查看进程1508的最大内存）</span><br><span class="line">jinfo -flag UseConcMarkSweepGC 1508 (查看垃圾回收器)</span><br><span class="line">jinfo -flag UseG1GC 1508</span><br><span class="line">jinfo -flag UseParallelGC 1508</span><br></pre></td></tr></table></figure>
-<img src="%5Cimages%5Cpasted-3.png%5C" alt="upload successful"></li>
-<li>查看进程非默认的JVM参数</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jinfo -flags 进程号</span><br><span class="line">jinfo -flags 1508</span><br></pre></td></tr></table></figure>
-
-<p><img src="%5Cimages%5Cpasted-2.png%5C" alt="upload successful"></p>
-<h2 id="1-3-jstat查看虚拟机统计信息"><a href="#1-3-jstat查看虚拟机统计信息" class="headerlink" title="1.3 jstat查看虚拟机统计信息"></a>1.3 jstat查看虚拟机统计信息</h2><h3 id="1-3-0-jstat-help官方文档"><a href="#1-3-0-jstat-help官方文档" class="headerlink" title="1.3.0 jstat -help官方文档"></a>1.3.0 <a href="https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstat.html" target="_blank" rel="noopener">jstat -help官方文档</a></h3><p><img src="%5Cimages%5Cpasted-4.png%5C" alt="upload successful"></p>
-<ol>
-<li>-class  查看类装载的信息</li>
-<li>-compiler 查看JIT编译的信息</li>
-<li>-gc 查看gc信息<h3 id="1-3-1-查看类装载的信息"><a href="#1-3-1-查看类装载的信息" class="headerlink" title="1.3.1 查看类装载的信息"></a>1.3.1 查看类装载的信息</h3>==指令==<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jstat -class 进程id 时间间隔 输出次数</span><br><span class="line">jstat -class 1508 1000 10</span><br></pre></td></tr></table></figure>
-<img src="%5Cimages%5Cpasted-5.png%5C" alt="upload successful"></li>
-</ol>
-<h3 id="1-3-2-查看垃圾收集"><a href="#1-3-2-查看垃圾收集" class="headerlink" title="1.3.2 查看垃圾收集"></a>1.3.2 查看垃圾收集</h3><p>==1. 指令==</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">jstat -gc 进程id 时间间隔 输出次数</span><br><span class="line">jstat -gcutil 进程id 时间间隔 输出次数  </span><br><span class="line">jstat -gccause 进程id 时间间隔 输出次数  (gc原因)</span><br><span class="line">jstat -gcnew 进程id 时间间隔 输出次数</span><br><span class="line">jstat -gcold 进程id 时间间隔 输出次数</span><br><span class="line">jstat -gc 1508 1000 10</span><br></pre></td></tr></table></figure>
-
-<p><img src="%5Cimages%5Cpasted-6.png%5C" alt="upload successful"><br>2. 结果参数含义</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">S0C S1C S0U S1U:S0和S1的总量与使用量</span><br><span class="line">EC EU :Eden区总量和使用量</span><br><span class="line">OC OU :Old区总量和使用量</span><br><span class="line">MC MU :Metaspace区总量和使用量</span><br><span class="line">CCSC CCSU:压缩类空间的总量及使用量</span><br><span class="line">YGC YGCT :YongGC的次数与时间</span><br><span class="line">FGC FGCT :FullGC的次数与时间</span><br><span class="line">GCT:总的GC时间</span><br></pre></td></tr></table></figure>
-<p><img src="%5Cimages%5Cpasted-7.png%5C" alt="upload successful"></p>
-<h3 id="1-3-3-查看JIT编译信息"><a href="#1-3-3-查看JIT编译信息" class="headerlink" title="1.3.3 查看JIT编译信息"></a>1.3.3 查看JIT编译信息</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jstat -compiler</span><br><span class="line">jstat -printcompilation</span><br></pre></td></tr></table></figure>
-<p><img src="%5Cimages%5Cpasted-8.png%5C" alt="upload successful"></p>
-<h2 id="1-4-jmap-MAT实战内存溢出"><a href="#1-4-jmap-MAT实战内存溢出" class="headerlink" title="1.4 jmap+MAT实战内存溢出"></a>1.4 jmap+MAT实战内存溢出</h2><h3 id="1-4-1-如何导出内存溢出"><a href="#1-4-1-如何导出内存溢出" class="headerlink" title="1.4.1 如何导出内存溢出"></a>1.4.1 如何导出内存溢出</h3><h4 id="1-4-1-1-内存溢出自动导出"><a href="#1-4-1-1-内存溢出自动导出" class="headerlink" title="1.4.1.1 内存溢出自动导出"></a>1.4.1.1 内存溢出自动导出</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-XX:+HeapDumpOnOutOfMemoryError 发送内存溢出导出</span><br><span class="line">-XX:HeapDumpPath&#x3D;.&#x2F; 导出地址（当前位置）</span><br></pre></td></tr></table></figure>
-<h4 id="1-4-1-2-使用jmap命令手动导出"><a href="#1-4-1-2-使用jmap命令手动导出" class="headerlink" title="1.4.1.2 使用jmap命令手动导出"></a>1.4.1.2 使用jmap命令手动导出</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-heap                   to print java heap summary</span><br><span class="line">-clstats                to print class loader statistics</span><br><span class="line">-dump:&lt;dump-options&gt;    导出dump</span><br><span class="line">-F                      force. Use with -dump:&lt;dump-options&gt; &lt;pid&gt; or -histo</span><br><span class="line">                         to force a heap dump or histogram when &lt;pid&gt; does not</span><br><span class="line">                         respond. The &quot;live&quot; suboption is not supported</span><br></pre></td></tr></table></figure>
-<p>jmap -dump:format=b,file=heap.hprof 3204 </p>
-<h3 id="1-4-2-MAT使用"><a href="#1-4-2-MAT使用" class="headerlink" title="1.4.2 MAT使用"></a>1.4.2 MAT使用</h3><h4 id="1-4-2-1-heap内存溢出错误代码"><a href="#1-4-2-1-heap内存溢出错误代码" class="headerlink" title="1.4.2.1 heap内存溢出错误代码"></a>1.4.2.1 heap内存溢出错误代码</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment"> * -Xmx32M -Xms32M  -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=./</span></span><br><span class="line"><span class="comment"> * */</span></span><br><span class="line"><span class="meta">@GetMapping</span>(<span class="string">"/heap"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">heap</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(<span class="keyword">true</span>) &#123;</span><br><span class="line">		userList.add(<span class="keyword">new</span> User(i++, UUID.randomUUID().toString()));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="1-4-2-2-MAT分析"><a href="#1-4-2-2-MAT分析" class="headerlink" title="1.4.2.2 MAT分析"></a>1.4.2.2 MAT分析</h4><p>1.生成 heap.hprof文件<br>2.安装 MAT<br>3.导入 heap.hprof文件<br><img src="%5Cimages%5Cpasted-9.png%5C" alt="upload successful"><br>4.继续分析<br><img src="%5Cimages%5Cpasted-10.png%5C" alt="upload successful"><br><img src="%5Cimages%5Cpasted-11.png%5C" alt="upload successful"><br>5.排除虚引用<br><img src="%5Cimages%5Cpasted-12.png%5C" alt="upload successful"><br><img src="%5Cimages%5Cpasted-13.png%5C" alt="upload successful"></p>
-<h2 id="1-5-jstack实战死循环与死锁"><a href="#1-5-jstack实战死循环与死锁" class="headerlink" title="1.5 jstack实战死循环与死锁"></a>1.5 jstack实战死循环与死锁</h2><h3 id="1-5-1-jstack"><a href="#1-5-1-jstack" class="headerlink" title="1.5.1 jstack"></a>1.5.1 jstack</h3><p>jstack 1093 &gt;1093.txt</p>
-<h3 id="1-5-2-线程状态"><a href="#1-5-2-线程状态" class="headerlink" title="1.5.2 线程状态"></a>1.5.2 线程状态</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">new </span><br><span class="line">runnable</span><br><span class="line">blocked</span><br><span class="line">waiting </span><br><span class="line">timed_waiting </span><br><span class="line">terminated</span><br></pre></td></tr></table></figure>
-<p><img src="%5Cimages%5Cpasted-14.png%5C" alt="upload successful"></p>
-<h3 id="1-5-3-实战死循环导致cpu飚高"><a href="#1-5-3-实战死循环导致cpu飚高" class="headerlink" title="1.5.3 实战死循环导致cpu飚高"></a>1.5.3 实战死循环导致cpu飚高</h3><p>jstack 1093 &gt;1093.txt 查看<br>nohup java -jar demo.jar &amp;<br>top 查看</p>
-<h3 id="1-5-4-死锁"><a href="#1-5-4-死锁" class="headerlink" title="1.5.4 死锁"></a>1.5.4 死锁</h3><p>jstack 1093 &gt;1093.txt 查看<br>文件末尾 <code>Found 1 deadlock</code></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/25/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -404,17 +295,9 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
